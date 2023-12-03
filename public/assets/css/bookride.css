@@ -1,0 +1,208 @@
+.wallpaper {
+    height: 50vh;
+}
+.wallpaper #message {
+	position: absolute;
+	top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+.result-tab {
+    display: flex;
+    flex-direction: row;
+    margin: 10vh 5vw;
+    border: solid 0px;
+    border-radius: 20px;
+    /* background-color: #f8f8f8; */
+    overflow: hidden;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px; */
+}
+
+
+
+/* Field Items */
+.left-tab {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    font-family: 'Nunito', sans-serif;
+	background-color: #e6e3ba;
+    padding: 20px;
+    overflow: hidden;
+}
+.left-tab .search-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	overflow: hidden;
+	background-color: #272727;
+	border: solid 3px #3a3a3a;
+	border-radius: 10px;
+	/* padding: 5px 10px; */
+	font-family: 'Nunito', sans-serif;
+    margin: 0 0 20px 0;
+}
+.left-tab .search-bar input {
+	all: unset;
+	font-size: 16px;
+	margin-left: 15px;
+	background-color: #282828;
+	color: white;
+}
+.left-tab  .search-bar input::placeholder {
+	color: #bbbbbb;
+}
+
+.left-tab  .search-bar button {
+	all: unset;
+	width: 50px;
+	color: #ffffff;
+	background-color: #27526e;
+
+	height: 40px;
+	text-align: center;
+}
+.left-tab .search-bar button:hover {
+	cursor: pointer;
+	background-color: #ee862c;
+	transition: 0.3s;
+}
+.left-tab #head {
+    margin-top: 20px;
+}
+.left-tab #range-slider {
+    opacity: 0.7;
+    width: 100%;
+}
+
+.left-tab #range:hover {
+    opacity: 1;
+}
+.left-tab #price-range {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    gap: 8px;
+}
+.left-tab #price-range input {
+    all: unset;
+    background-color: #d8d6be;
+    color: #27526e    ;
+    border: solid 2px;
+    border-radius: 5px;
+    padding: 4px;
+    width: 100px;
+}
+
+.right-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    gap: 50px;
+    font-family: 'Nunito', sans-serif;
+    padding: 20px;
+}
+.right-tab #heading {
+    all: unset;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+}
+
+.right-tab .item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    /* min-width: 360px; */
+    /* border: solid 1px; */
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 30px; /* Reserved for bottom bar */
+    overflow: hidden;
+    background-color: #f1eec3;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.right-tab .item .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    width: 120px;
+    overflow: hidden;
+    
+}
+.right-tab .item .left img {
+    width: 60px;
+    border: solid 2px #d6d6d6;
+    border-radius: 60px;
+}
+.right-tab .item .left #name {
+    font-weight: bold;
+}
+.right-tab .item .left #user-points {
+    font-size: 15px;
+}
+.right-tab .item .left #user-points span {
+    color: #272727;
+}
+.right-tab .item .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 0px;
+    border-radius: 10px;
+    background-color: #fffdd0;
+    width: 100%;
+    padding: 15px;
+
+
+    gap: 10px;
+    height: 200px;
+}
+.right-tab .item .right .destination {
+    display: flex;
+    flex-direction: row;   
+    gap: 20px;
+}
+.right-tab .item .right .destination {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+.right-tab .item .right .destination span {
+    display: block;
+    font-size: 15px;
+    color: #4d4d4d;
+}
+
+.right-tab .item .right #message{
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    /* transform: translatey(-100%); */
+    font-size: 20px;
+}
+
+.right-tab .item .right .bottom {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: #ac6f17;
+    color: #e7e7e7;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
